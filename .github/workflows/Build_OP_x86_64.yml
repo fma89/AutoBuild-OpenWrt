@@ -73,11 +73,9 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
 
-    #- name: Import external feeds
-    #  working-directory: ./openwrt
-    #  run: |
-    #    git clone https://github.com/Lienol/openwrt-package package/lienol
-    #    git clone "your_github_link" package/"your_folder_name"      
+    - name: Import external feeds
+      working-directory: ./openwrt
+      run: |
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomato package/luci-theme-opentomato
         git clone https://github.com/Lienol/openwrt-package/tree/master/lienol/luci-theme-argon-dark-mod package/luci-theme-argon-dark
         git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
