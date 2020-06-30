@@ -77,7 +77,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomato package/luci-theme-opentomato
-        git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
         git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
         
         
